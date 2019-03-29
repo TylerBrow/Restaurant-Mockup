@@ -191,14 +191,14 @@ figure {
 }
 .headline p {
     display: inline-block;
-    border: 1px solid blue;
+    /* border: 1px solid green; */
     margin: 0px, 0px, 0px, 0px;
     padding: 0px, 0px, 0px, 0px;
 }
 
 .item {
     display: inline-block;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid red;
     border-bottom: 0px solid black;
     font-size: 25;
@@ -213,7 +213,7 @@ figure {
 .description {
     display: inline-block;
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid red;
     font-size: 13px;
     width: 80%;
@@ -447,7 +447,7 @@ input[type="submit"], textarea[type="submit"] {
         position: absolute;
         width: 76%;
         top: 17%;
-        left: 12%;
+        left: 12%;  
    }
     .hero {
         width: 100%;
