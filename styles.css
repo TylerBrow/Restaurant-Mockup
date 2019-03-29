@@ -163,8 +163,10 @@ figure {
     background-color: #fcfcfc;
 }
 .col-1 {
+    border: 1px solid red;
     width: 70%;
     height: 500px;
+    padding: 0px, 0px, 0px, 0px;
 }
 
 .col-2 {
@@ -174,21 +176,101 @@ figure {
 }
 
 .headline {
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid red;
+    border-bottom: 2px solid black;
+    font-size: 25px;
     width: 100%;
     height: 50px;
+    line-height: 0px;
     text-align: left;
     /* vertical-align: center; */
-    font-size: 25px;
-    /* margin: 20px, 0px; */
-    border-bottom: 2px solid black;
-    /* padding: 30px, 0px; */
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.headline p {
+    display: inline-block;
+    border: 1px solid blue;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
 }
 
 .item {
-    font-size: 15;
-    margin: 10px;
-
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid red;
+    border-bottom: 0px solid black;
+    font-size: 25;
+    width: 100%;
+    height: 50px;
+    line-height: 0px;
+    text-align: left;
+    /* vertical-align: center; */
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
 }
+.description {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    border: 1px solid red;
+    font-size: 13px;
+    width: 80%;
+    height: 100px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.description.description-p {
+    display: inline-block;
+    border: 1px solid red;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.right-box {
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    border: 1px solid red;
+    font-size: 0px;
+    width: 20%;
+    height: 100px;
+    line-height: 0px;
+    text-align: left;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.food-icons {
+    display: flex;
+    flex-direction: row;
+}
+.food-icon {
+    /* display: inline-block; */
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border: 1px solid red;
+    font-size: 18px;
+    height: 0px;
+    width: 0px;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.food-icon p {
+    /* display: inline-block; */
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border: 1px solid red;
+    margin: 0px, 30px, 60px, 90px;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+
+
+
 
 /* -- LAYER 4 -- */
 
