@@ -4,7 +4,7 @@
 }
 body {
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/bg.jpg");
+    background: grey;
 }
 a {
     text-decoration: none;
@@ -68,8 +68,6 @@ nav ul {
 .layer1 {
     position: relative;
     overflow: hidden;
-    border-bottom: 1px solid rgba(144, 144, 142, 0.5);
-    background-clip: padding-box;
     max-height: 250px;
     width: 100%;
 }
@@ -87,7 +85,7 @@ nav ul {
     /* z-index: -1; */
     /* margin-left: 60px; */
 }
-figure {
+.hero-container {
     position: relative;
     width: 550%;
     /* margin-top: -100px; */
@@ -107,7 +105,7 @@ figure {
     background-color: #fcfcfc;
     width: 31.85%;
     vertical-align: top;
-    margin-top: 5%;
+    margin-top: 1%;
     min-height: 240px;
     border-bottom: 3px solid rgba(144, 144, 142, 0.5);
     background-clip: padding-box;
@@ -129,7 +127,7 @@ figure {
     color: #B4292E;
 }
 #middle-box {
-    margin: 5% 1.5%;
+    margin: 1% 1.5%;
 }
 .sub {
     font-size: 15px;
@@ -236,6 +234,66 @@ h2 {
     padding: 10px, 10px, 10px, 10px; */
 }
 
+/* Food Photos Right */
+.photo-header {
+    display: block;
+    overflow: hidden;
+    border: 1px solid red;
+    width: 100%;
+    height: 50px;
+    line-height: 0px;
+    text-align: left;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.photo-header p {
+    font-size: 25px;
+}
+.food-template {
+    display: block;
+    overflow: hidden;
+    border: 1px solid red;
+    width: 100%;
+    height: 225px;
+    text-align: left;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.food-template p {
+
+}
+
+
+/* RIGHT FOOD MENU */
+
+
+.one-header {
+    border: 0px solid black;
+	display: flex;
+    width: 262px;
+    height: 50px;
+    font-size: 25px;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    vertical-align: center;
+}
+.foodPics {
+	border: 1px solid black;
+	display: flex;
+	width: 262px;
+	flex-direction: column;
+	margin-left: 0px;
+}
+.images {
+	background-color: black;
+	color: white;
+	width: 240px;
+	margin:10px;
+	overflow: hidden;
+}
 
 
 
