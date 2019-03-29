@@ -3,8 +3,71 @@ $(function() {
 
   $.get("https://obscure-tundra-54269.herokuapp.com/fine-dining", function(data) {
      var app = document.querySelector(".menuitem")
+     
+     
 
-     var htmlstr = data.appetizers.map(function(item){
+     $('#apps').on('click', function(){
+        
+
+        var htmlstr = data.appetizers.map(function(item){
+            return `<div class="menuitem">
+            <div class="foodname"><p>${item.name}...........................................................................</p><p>$${item.price}</p></div>
+            <div class="description">
+                <p>
+                    ${item.description}
+                </p>
+            
+            <div class="right-box">
+                <div class="food-icons">
+                    <div class="food-icon"><p>1</p></div>
+                    <div class="food-icon"><p>2</p></div>
+                    <div class="food-icon"><p>3</p></div>
+                    <div class="food-icon"><p>4</p></div>
+                </div>
+            </div>
+            </div>
+            </div>`
+            
+            
+        }).join('')
+        
+        app.innerHTML = htmlstr 
+     })
+    
+     $('#dinner').on('click', function(){
+
+        var htmlstr2 = data.entrees.map(function(item){
+            return `<div class="menuitem">
+            <div class="foodname"><p>${item.name}...........................................................................</p><p>$${item.price}</p></div>
+            <div class="description">
+                <p>
+                    ${item.description}
+                </p>
+            
+            <div class="right-box">
+                <div class="food-icons">
+                    <div class="food-icon"><p>1</p></div>
+                    <div class="food-icon"><p>2</p></div>
+                    <div class="food-icon"><p>3</p></div>
+                    <div class="food-icon"><p>4</p></div>
+                </div>
+            </div>
+            </div>
+            </div>`
+            
+            
+        }).join('')
+        
+         app.innerHTML = htmlstr2
+     
+
+
+
+  })
+
+  $('#dessert').on('click', function(){
+
+    var htmlstr3 = data.desserts.map(function(item){
         return `<div class="menuitem">
         <div class="foodname"><p>${item.name}...........................................................................</p><p>$${item.price}</p></div>
         <div class="description">
@@ -26,24 +89,10 @@ $(function() {
         
     }).join('')
     
-    app.innerHTML = htmlstr 
-
-/////////////////////////////////////////////////////////
-   
-     data.entrees.map(function(item){
-        console.log(item.name, item.price,item.description)
-     })
-
-     data.desserts.map(function(item){
-        console.log(item.name, item.price,item.description)
-     })
-
-
-  })
-
+     app.innerHTML = htmlstr3
 })
-
-
+})
+})
 
 
 // {/* <div id="disqus_thread"></div>
@@ -68,10 +117,10 @@ $(function() {
 // <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 //  */}    ********where disqus loads******
 
-{/* <script id="dsq-count-scr" src="//italiana.disqus.com/count.js" async></script>   *****last script */}
+/* <script id="dsq-count-scr" src="//italiana.disqus.com/count.js" async></script>   *****last script */
 
 
 
 
 
-{/* <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBe5CsprDyIARIjNsrohRExQ&key=AIzaSyD6VImWKzsNcq76jemUdj5j6qkgofPlcqc" allowfullscreen></iframe> */}
+/* <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBe5CsprDyIARIjNsrohRExQ&key=AIzaSyD6VImWKzsNcq76jemUdj5j6qkgofPlcqc" allowfullscreen></iframe> */

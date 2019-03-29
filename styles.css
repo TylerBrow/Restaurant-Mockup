@@ -147,6 +147,9 @@ nav ul {
     color: rgb 999;
     margin-left: 7%;
 }
+#end-box {
+    background-color: rgba(0, 0, 0, 0)
+}
 .read-more {
     text-align: center;
     padding: 11px;
@@ -179,15 +182,26 @@ nav ul {
     height: 500px;
     padding: 0px, 0px, 0px, 0px;
     overflow: scroll;
+    padding-left: 10px;
 }
 
-.col-2 {
+/* .col-2 {
     width: 29%;
     height: 500px;
-    vertical-align: top;
-}
+    vertical-align: top; */
+
+
 h2 {
     border-bottom: 1px solid darkslategray;;
+}
+#story {
+    line-height: 2;
+    font-family: cursive;
+    font-weight: bold;
+}
+#ourstory {
+    text-align: center;
+    
 }
 .appetizers {
     display: flex;
