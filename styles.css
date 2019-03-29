@@ -181,6 +181,15 @@ nav ul {
 h2 {
     border-bottom: 1px solid black;
 }
+#story {
+    line-height: 2;
+    font-family: cursive;
+    font-weight: bold;
+}
+#ourstory {
+    text-align: center;
+    
+}
 .appetizers {
     display: flex;
     flex-direction: column;
