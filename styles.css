@@ -1,0 +1,459 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/bg.jpg");
+}
+a {
+    text-decoration: none;
+    color: #fcfcfc;
+}
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+/* -- NAV -- */
+.header-top {
+    text-align: right;
+}
+.social-icons, .social-icons li {
+    margin: 0 0 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+.social-icons li {
+    margin: 0;
+}
+.social-icons li img {
+    width: 40px;
+    height: 40px;
+    border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+    background-clip: padding-box;
+}
+#contact {
+    margin-right: 0;
+}
+#subscribe {
+    font-size: 9px;
+}
+#dot, #five-dots {
+    font-size: 24px;
+    vertical-align: top;
+    padding-top: 1px;
+    padding-right: 80px;
+    padding-left: 8px;
+    color: #fcfcfc;
+    font-family: Serif;
+}
+#five-dots {
+    transform: rotate(-90deg);
+    padding: 0 0 9px 9px;
+    margin-right: -9px;
+    vertical-align: bottom;
+}
+nav {
+    width: 100%;
+    margin: 1% 0 2% 0;
+}
+nav ul {
+    padding: 0;
+    margin: auto;
+}
+
+
+/* -- LAYER 1 -- */
+.layer1 {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(144, 144, 142, 0.5);
+    background-clip: padding-box;
+    max-height: 250px;
+    width: 100%;
+}
+.hero {
+    width: 100%;
+    max-height: 247px;
+    display: block;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.hero img {
+    width: 25%;
+    float: left;
+    position: relative;
+    /* z-index: -1; */
+    /* margin-left: 60px; */
+}
+figure {
+    position: relative;
+    width: 550%;
+    /* margin-top: -100px; */
+    margin-right: 0;
+    margin-bottom: 0;
+    /* margin-left: -60px; */
+    left: 0;
+    text-align: left;
+    min-height: 234px;
+}
+
+
+
+/* -- LAYER 2 -- */
+.box {
+    display: inline-block;
+    background-color: #fcfcfc;
+    width: 31.85%;
+    vertical-align: top;
+    margin-top: 5%;
+    min-height: 240px;
+    border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+    background-clip: padding-box;
+}
+.box h2 {
+    margin: 7%;
+    font-weight: 400;
+    font-size: 18px;
+    min-height: 30px;
+}
+.box p {
+    margin: 7%;
+    font-size: 13px;
+    height: 86px;
+    line-height:15px; 
+}
+.box a {
+    margin: auto;
+    color: #B4292E;
+}
+#middle-box {
+    margin: 5% 1.5%;
+}
+.sub {
+    font-size: 15px;
+    color: rgb 999;
+    margin-left: 7%;
+}
+.read-more {
+    text-align: center;
+    padding: 11px;
+}
+
+
+/* -- LAYER 3 -- */
+.layer3 {
+    width: 100%;
+    position: relative;
+}
+.layer3 span {
+    display: block;
+    text-align: center;
+    color: #fcfcfc;
+    font-family: arial-black;
+    font-size: 0px;
+    font-weight: 0;
+    line-height: 0;
+}
+
+.col-1, .col-2 {
+    display: inline-block;
+    /* border: 1px solid rgba(144, 144, 142, 0.5); */
+    background-color: #fcfcfc;
+}
+.col-1 {
+    border: 1px solid red;
+    width: 70%;
+    height: 500px;
+    padding: 0px, 0px, 0px, 0px;
+}
+
+.col-2 {
+    width: 29%;
+    height: 500px;
+    vertical-align: top;
+}
+
+.headline {
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid red;
+    border-bottom: 2px solid black;
+    font-size: 25px;
+    width: 100%;
+    height: 50px;
+    line-height: 0px;
+    text-align: left;
+    /* vertical-align: center; */
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.headline p {
+    display: inline-block;
+    border: 1px solid blue;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+
+.item {
+    display: inline-block;
+    overflow: hidden;
+    border: 1px solid red;
+    border-bottom: 0px solid black;
+    font-size: 25;
+    width: 100%;
+    height: 50px;
+    line-height: 0px;
+    text-align: left;
+    /* vertical-align: center; */
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.description {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    border: 1px solid red;
+    font-size: 13px;
+    width: 80%;
+    height: 100px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.description.description-p {
+    display: inline-block;
+    border: 1px solid red;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.right-box {
+    display: inline-block;
+    float: right;
+    overflow: hidden;
+    border: 1px solid red;
+    font-size: 0px;
+    width: 20%;
+    height: 100px;
+    line-height: 0px;
+    text-align: left;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.food-icons {
+    display: flex;
+    flex-direction: row;
+}
+.food-icon {
+    /* display: inline-block; */
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border: 1px solid red;
+    font-size: 18px;
+    height: 0px;
+    width: 0px;
+    margin: 0px, 0px, 0px, 0px;
+    padding: 0px, 0px, 0px, 0px;
+}
+.food-icon p {
+    /* display: inline-block; */
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border: 1px solid red;
+    margin: 0px, 30px, 60px, 90px;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+
+
+
+
+/* -- LAYER 4 -- */
+
+.contact {
+    width: 100%;
+    background-color: #fcfcfc;
+    margin-bottom: 50px;
+    margin-top: 5px;
+    border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+    background-clip: padding-box;
+}
+.left-col {
+    display: inline-block;
+    width: 51%;
+    vertical-align: top;
+    padding: 4%;
+}
+.left-col h6 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.left-col p {
+    font-size: 9px;
+    margin: 0 auto;
+    line-height: 2;
+}
+.left-col ul {
+    padding-left: 0px;
+}
+.left-col li {
+    display: inline-block;
+}
+.left-col li img {
+    width: 20px;
+    height: 20px;
+}
+.right-col {
+    display: inline-block;
+    padding: 4%;
+    width: 48.38%;
+    vertical-align: top;
+    text-align: right;
+}
+
+input, textarea {
+    width: 100%;
+    font-size: 9px;
+    padding: 3%;
+    margin-top: 5px;
+}
+textarea {
+    border: 1px solid gainsboro;
+}
+input[type="submit"], textarea[type="submit"] {
+    width: 50%;
+    color: #fcfcfc;
+    background-color: #B4292E;
+    border: none;
+}
+
+
+@media (min-width: 0px) and (max-width: 766px) {
+    * {
+        font-family: sans-serif;
+   }
+    body {
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg.jpg");
+   }
+    a {
+        text-decoration: none;
+        color: #fcfcfc;
+   }
+    .container {
+        width: 100%;
+        margin: auto;
+   }
+    .header-top {
+        display: none;
+   }
+    nav {
+        width: 100%;
+        margin: 1% 0 2% 0;
+        float: left;
+   }
+    nav ul {
+        padding: 0;
+        margin: auto;
+   }
+    nav ul li {
+        display: inline-block;
+        background-color: ;
+        width: 100%;
+        text-align: center;
+        font-weight: 100;
+        font-size: 24px;
+        margin: 0 1px;
+        border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+        background-clip: padding-box;
+        padding: 2px 0;
+   }
+    nav ul .dash {
+        font-weight: 400;
+        font-size: 16px;
+   }
+    .hero {
+        width: 100%;
+        max-height: 217px;
+        display: block;
+        border: 8px solid white;
+        overflow: hidden;
+   }
+    figure {
+        position: relative;
+        width: 400%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        animation: none;
+        min-height: 234px;
+   }
+    .layer2 {
+        width: 100%;
+        text-align: center;
+   }
+    .box {
+        text-align: left;
+        display: inline-block;
+        background-color: #fcfcfc;
+        width: 75%;
+        vertical-align: top;
+        margin-top: 5%;
+        min-height: 240px;
+        border-bottom: 3px solid rgba(144, 144, 142, 0.5);
+        background-clip: padding-box;
+   }
+    .box h2 {
+        font-size: 24px;
+   }
+    .box .sub, .box p {
+        font-size: 15px;
+    
+   }
+    .skateboarders {
+        width: 75%;
+        margin: 0 auto;
+   }
+    .skateboarders .col-1, .skateboarders .col-2 {
+        width: 100%;
+        display: inline-block;
+   }
+    .skateboarders .col-2 {
+        margin-top: 120px;
+   }
+    
+    .contact {
+        width: 75%;
+        margin: auto;
+   }
+    .contact .left-col {
+        width: 92%;
+   }
+    .contact .right-col {
+        display: inline-block;
+        padding: 8%;
+        width: 100%;
+        vertical-align: top;
+        text-align: right;
+   }
+}
+@media (min-width: 0px) and (max-width: 320px) {
+    #overlay-logo img {
+        position: absolute;
+        width: 76%;
+        top: 17%;
+        left: 12%;
+   }
+    .hero {
+        width: 100%;
+        max-height: 200px;
+        display: block;
+        border: 8px solid white;
+        overflow: hidden;
+   }
+}
