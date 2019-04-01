@@ -4,12 +4,20 @@ $(function() {
   $.get("https://obscure-tundra-54269.herokuapp.com/fine-dining", function(data) {
      var app = document.querySelector(".menuitem")
      
+    
      
 
      $('#apps').on('click', function(){
         
 
         var htmlstr = data.appetizers.map(function(item){
+            if (item.extra.spicy === true){
+            var spicy = 'Sp'} else {var spicy = ''}
+            if (item.extra.glutenfree === true){
+            var gf = 'GF'} else {var gf = ''}
+            if (item.extra.vegetarian === true){
+            var vegan = 'V'} else {var vegan = ''}
+
             return `<div class="menuitem">
             <div class="foodname"><p>${item.name}...........................................................................</p><p>$${item.price}</p></div>
             <div class="description">
@@ -19,10 +27,10 @@ $(function() {
             
             <div class="right-box">
                 <div class="food-icons">
-                    <div class="food-icon"><p>1</p></div>
-                    <div class="food-icon"><p>2</p></div>
-                    <div class="food-icon"><p>3</p></div>
-                    <div class="food-icon"><p>4</p></div>
+                    <div class="food-icon"><p>${spicy}</p></div>
+                    <div class="food-icon" id='gf'><p>${gf}</p></div>
+                    <div class="food-icon" id='vegan'><p>${vegan}</p></div>
+                    <div class="food-icon"><p></p></div>
                 </div>
             </div>
             </div>
@@ -37,6 +45,12 @@ $(function() {
      $('#dinner').on('click', function(){
 
         var htmlstr2 = data.entrees.map(function(item){
+            if (item.extra.spicy === true){
+                var spicy = 'Sp'} else {var spicy = ''}
+                if (item.extra.glutenfree === true){
+                var gf = 'GF'} else {var gf = ''}
+                if (item.extra.vegetarian === true){
+                var vegan = 'V'} else {var vegan = ''}
             return `<div class="menuitem">
             <div class="foodname"><p>${item.name}...........................................................................</p><p>$${item.price}</p></div>
             <div class="description">
@@ -46,10 +60,10 @@ $(function() {
             
             <div class="right-box">
                 <div class="food-icons">
-                    <div class="food-icon"><p>1</p></div>
-                    <div class="food-icon"><p>2</p></div>
-                    <div class="food-icon"><p>3</p></div>
-                    <div class="food-icon"><p>4</p></div>
+                    <div class="food-icon"><p>${spicy}</p></div>
+                    <div class="food-icon" id='gf'><p>${gf}</p></div>
+                    <div class="food-icon" id='vegan'><p>${vegan}</p></div>
+                    <div class="food-icon"><p></p></div>
                 </div>
             </div>
             </div>
@@ -68,6 +82,12 @@ $(function() {
   $('#dessert').on('click', function(){
 
     var htmlstr3 = data.desserts.map(function(item){
+        if (item.extra.spicy === true){
+            var spicy = 'Sp'} else {var spicy = ''}
+            if (item.extra.glutenfree === true){
+            var gf = 'GF'} else {var gf = ''}
+            if (item.extra.vegetarian === true){
+            var vegan = 'V'} else {var vegan = ''}
         return `<div class="menuitem">
         <div class="foodname"><p>${item.name}...........................................................................</p><p>$${item.price}</p></div>
         <div class="description">
@@ -77,10 +97,10 @@ $(function() {
         
         <div class="right-box">
             <div class="food-icons">
-                <div class="food-icon"><p>1</p></div>
-                <div class="food-icon"><p>2</p></div>
-                <div class="food-icon"><p>3</p></div>
-                <div class="food-icon"><p>4</p></div>
+                <div class="food-icon"><p>${spicy}</p></div>
+                <div class="food-icon" id='gf'><p>${gf}</p></div>
+                <div class="food-icon" id='vegan'><p>${vegan}</p></div>
+                <div class="food-icon"><p></p></div>
             </div>
         </div>
         </div>
