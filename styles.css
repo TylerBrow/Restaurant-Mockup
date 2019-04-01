@@ -4,7 +4,7 @@
 }
 body {
     background-size: cover;
-    background-image: url("/Users/seangeer/Restaurant-Mockup/Assets/michal-kubalczyk-261748-unsplash.jpg");
+    background-image: url("./Assets/michal-kubalczyk-261748-unsplash.jpg");
     background-position: center;
 }
 a {
@@ -146,9 +146,15 @@ nav ul {
     font-size: 15px;
     color: rgb 999;
     margin-left: 7%;
+    text-align: center;
+}   
+.sub img {
+    width: 100px;
+    height: 100px;;
 }
 #end-box {
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: none;
 }
 .read-more {
     text-align: center;
@@ -194,6 +200,9 @@ nav ul {
 h2 {
     border-bottom: 1px solid darkslategray;;
 }
+h2:hover {
+    border-bottom: 3px solid red;
+}
 #story {
     line-height: 2;
     font-family: cursive;
@@ -227,17 +236,31 @@ h2 {
     border-bottom: 1px dotted darkslategray;;
 }
 .description p {
-    padding-right: 10px;
+    /* padding-right: 10px; */
 }
  .right-box {
     width: 30%;
-    border-left: 1px solid darkslategray;;
     margin-left: 20px;
     
 }
 .food-icons {
     display: flex;
     flex-direction: row; 
+    justify-content: center;
+}
+#vegan {
+    background-color: blue;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+#gf {
+    background-color: darkred;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 15px;
 }
 /* .food-icon {
     /* display: inline-block; 
